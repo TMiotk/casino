@@ -1,0 +1,15 @@
+
+<div class='gry'>
+
+    <div class="container" *ngFor="let article of articles;" >
+    <div class="ribbon ribbon-top-right" *ngIf="(article.categories[1] || article.categories[0] || article.categories[2] ) == ('new' || 'top')"><span>NEW</span></div>
+    <div class="tenzjp" *ngFor="let jp of jackpocik">
+    <div class="jackpot" *ngIf="article.id == jp.game">
+    {{jp.amount + ' £ ' }} </div></div>
+    <img  src="https:{{article.image}}" alt="{{article.name}}" />
+    <p class="title">{{article.name}}</p>
+    <div class="overlay"></div>
+    <div class="button"><a href="#"> PLAY</a></div>
+    </div>
+    
+</div>

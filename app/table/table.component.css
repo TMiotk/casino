@@ -1,0 +1,212 @@
+.gry{
+    text-align: center;
+    margin: 2vw;
+    padding: 1.5vw;
+    left: -100px;
+    position: relative;
+}
+@media screen and (max-width: 600px) {
+
+.gry{
+    left: -30px;
+}
+
+.overlay{
+    top:0px;
+    left:0px;
+}
+.container:hover .overlay {
+top: 10px;
+left: 10px;
+}
+.gry img{
+    left: 10px;
+    top: 10px;
+}
+
+}
+
+.gry img{
+    padding: 0.5vw;
+    width: 300px;
+    height: 220px;
+    border-radius: 25px;
+}
+
+.costam{
+    display: block;
+}
+
+
+.gry button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity:0;
+  } 
+
+  .gierka{
+      padding: 0;
+      margin: 0;
+      float:right;
+  }
+
+
+  .container {
+    position: relative;
+  
+    width: 300px;
+    height: 220px;
+    float:right;
+    margin: 0.5vw;
+  }
+  
+  .overlay {
+    position:relative;
+    top: 10px;
+    left:10px;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+  }
+  
+  .container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .8);
+    position:relative;
+    top: 10px;
+    left:10px;
+    border-radius: 25px;
+  }
+  
+  img {
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    left: 0;
+  }
+  
+  .title {
+    position: absolute;
+    width: 300px;
+    left: 0;
+    top: 180px;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+    transition: top .5s ease;
+    opacity: 0;
+  }
+  
+  .container:hover .title {
+    top: 140px;
+    opacity: 1;
+  }
+  
+  .button {
+    position: absolute;
+
+    width: 300px;
+    left:0;
+    top: 120px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+  }
+  
+  .button a {
+    width: 200px;
+    background: yellow;
+    padding: 12px 48px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    border: solid 2px white;
+    border-radius: 25px;
+    z-index: 1;
+  }
+  
+  .container:hover .button {
+    opacity: 1;
+  }
+  .jackpot{
+      position: absolute;
+      width: 280px;
+      top: 80px;
+      left: 10px;
+      z-index: 10;
+      padding: 10px;
+      background:rgba(0, 0, 0, .8);
+      border-radius: 25px;
+      color: white;
+      font-size: x-large;
+
+  }
+
+  .tenzjp{
+
+    position: relative;
+    top:-50px;
+  }
+
+.ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+    top:30px;
+  }
+  .ribbon::before,
+  .ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #2980b9;
+  }
+  .ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: #3498db;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+
+  .ribbon-top-right {
+    top: 0px;
+    right: -18px;
+  }
+  .ribbon-top-right::before,
+  .ribbon-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+  .ribbon-top-right::before {
+    top: 0px;
+    left: 0px;
+  }
+  .ribbon-top-right::after {
+    bottom: 0;
+    right: 0;
+  }
+  .ribbon-top-right span {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+  }
+  
+  
